@@ -1,0 +1,64 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/travelplans/add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adessorideshare.travelplanservice",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/travelplans/add",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/travelplans/publish/{planId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adessorideshare.travelplanservice",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/travelplans/publish/{planId}",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/travelplans/search",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adessorideshare.travelplanservice",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/travelplans/search",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/travelplans/{planId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adessorideshare.travelplanservice",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/travelplans/{planId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/travelplans",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adessorideshare.travelplanservice",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/travelplans",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}
